@@ -1,21 +1,25 @@
-$body-bg: #34495e;
-$navbar-default-bg: #95a5a6;
+@import url(http://fonts.googleapis.com/css?family=Nunito:400,700);
+
+$body-bg: #bdc3c7;
+$font-family-sans-serif: 'Nunito', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$navbar-height: 45px;
+$navbar-default-bg: #ecf0f1;
 $navbar-default-link-color: #ecf0f1;
-$jumbotron-bg: #95a5a6;
+$jumbotron-bg: #ecf0f1;
+$btn-primary-bg: red;
+$btn-default-bg: #27ae60;
+$btn-default-border: #16a085;
+$btn-default-color: white;
+$navbar-default-brand-color: red;
+$navbar-default-link-color: black;
+
 @import "bootstrap-sprockets";
 @import 'bootstrap';
 
-.circular {
-  width: 328px;
-  height: 328px;
-  border-radius: 100px;
-  -webkit-border-radius: 150px;
-  -moz-border-radius: 150px;
-  background: url(https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/7/005/0ae/2b0/091beef.jpg) no-repeat;
-  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  display: block;
-  margin-left: auto;
-  margin-right: auto
-  }
+.center {
+  text-align: center;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
