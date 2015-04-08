@@ -1,1 +1,20 @@
+$body-bg: #34495e;
+$navbar-default-bg: #95a5a6;
+$navbar-default-link-color: #ecf0f1;
+$jumbotron-bg: #95a5a6;
 @import 'bootstrap';
+
+.circular {
+  width: 328px;
+  height: 328px;
+  border-radius: 100px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  background: url(https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/7/005/0ae/2b0/091beef.jpg) no-repeat;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+  }
