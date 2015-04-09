@@ -4,20 +4,25 @@ class PinsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
 
   def index
+    @user=current_user
     @pins = Pin.all
   end
 
   def show
+    @user=current_user
   end
 
   def new
+    @user=current_user
     @pin = current_user.pins.build
   end
 
   def edit
+    @user=current_user
   end
 
   def create
+    @user=current_user
     @pin = current_user.pins.build(pin_params)
     # if we are using json
     # respond_to do |format|
@@ -37,6 +42,7 @@ class PinsController < ApplicationController
   end
 
   def update
+    @user=current_user
     # if we are using json
     # respond_to do |format|
     #   if @pin.update(pin_params)
@@ -55,6 +61,7 @@ class PinsController < ApplicationController
   end
 
   def destroy
+    @user=current_user
     # if we are using json
     # @pin.destroy
     # respond_to do |format|

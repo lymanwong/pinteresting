@@ -1,4 +1,4 @@
-<%= link_to 'Back', pins_path %>
+<%= link_to raw('<span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span>Back'), pins_path %>
 
 <div class="row">
   <div class="col-md-offset-2 col-md-8">
@@ -10,7 +10,7 @@
     <p><%= @pin.description %></p>
     <p><strong><%= @pin.user.email if @pin.user %></strong></p>
     <% if @pin.user == current_user %>
-      <%= link_to 'Edit', edit_pin_path(@pin) %>
+      <%= link_to raw('<span class="glyphicon glyphicon-edit" aria-hidden="true"></span>Edit'), edit_pin_path(@pin) %>
     <% end %>
     </div>
   </div>

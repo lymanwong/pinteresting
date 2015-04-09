@@ -6,7 +6,7 @@
   <%= render 'form' %>
   </div>
   <div class="panel-footer">
-    <%= link_to 'Show', @pin %> |
-    <%= link_to 'Back', pins_path %>
+    <%= link_to raw('<span class="glyphicon glyphicon-hand-left" aria-hidden="true"></span>Back'), @pin %> |
+    <%= link_to raw('<span class="glyphicon glyphicon-th" aria-hidden="true"></span>Show all'), pins_path %>
   </div>
 </div>
