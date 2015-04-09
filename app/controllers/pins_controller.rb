@@ -5,7 +5,7 @@ class PinsController < ApplicationController
 
   def index
     @user=current_user
-    @pins = Pin.all
+    @pins = Pin.all.order("created_at DESC")
   end
 
   def show
