@@ -4,25 +4,20 @@ class PinsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
 
   def index
-    @user=current_user
     @pins = Pin.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 8)
   end
 
   def show
-    @user=current_user
   end
 
   def new
-    @user=current_user
     @pin = current_user.pins.build
   end
 
   def edit
-    @user=current_user
   end
 
   def create
-    @user=current_user
     @pin = current_user.pins.build(pin_params)
     # if we are using json
     # respond_to do |format|
